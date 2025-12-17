@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+body{margin:0;font-family:sans-serif}
+header,footer{background:#0b84ff;color:white;padding:1rem;text-align:center}
+nav a{color:white;margin:0 .5rem;text-decoration:none}
+main{padding:1rem}
+.grid{display:grid;gap:1rem}
+@media(min-width:768px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:#f1f1f1;padding:1rem;border-radius:5px}
+</style>
+</head>
+<body>
+<header>
+<h1>My Site</h1>
+<nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav>
+</header>
+<main>
+<div class="grid">
+<div class="card">Content 1</div>
+<div class="card">Content 2</div>
+<div class="card">Content 3</div>
+</div>
+</main>
+<footer>© 2025 My Site</footer>
+</body>
+</html>
